@@ -1,0 +1,523 @@
+@font-face {
+    font-family: "Socialico";
+    src: url("fonts/Socialico.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    margin: 0 auto;
+    max-width: 1280px;
+    ;
+    font-family: Arial, sans-serif;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .container {
+        padding: 0;
+    }
+}
+
+/**блок header**/
+
+header {
+    background-color: #445161;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+header .col-md-6{
+    height: 100%;
+    overflow: hidden;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+header ul {
+    padding-left: 35px;
+}
+
+header li {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    list-style-image: url(img/check_icon.png);
+}
+
+header img {
+    display: block;
+    float: right;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        padding: 10px;
+    }
+    header {
+        padding: 10px;
+    }
+    .about,
+    .pluses,
+    .screen,
+    .reviews {
+        padding: 10px !important;
+    }
+}
+
+/**блок about**/
+
+.about {
+    padding: 50px;
+    overflow: hidden;
+}
+
+.about h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about .col-md-5 {
+    padding-right: 0;
+}
+
+.about img {
+    display: block;
+    float: right;
+}
+
+
+/**блок pluses**/
+
+.pluses {
+    background-color: #f5f5f5;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.pluses h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pluses .col-md-6 {
+    background: url("img/plus.png") no-repeat left 5px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.pluses .col-md-6:nth-child(n+4) {
+    margin-top: 35px;
+}
+
+@media(max-width:991px) {
+    .pluses .col-md-6:nth-child(n+3) {
+        margin-top: 20px;
+    }
+}
+
+
+/**блок screen**/
+
+.screen {
+    overflow: hidden;
+    padding: 50px;
+}
+
+.screen .col-md-6 {
+    padding: 0;
+}
+
+.screen .col-md-6:nth-child(n+4) {
+    margin-top: 35px;
+    ;
+}
+
+@media (max-width:991px) {
+    .screen .col-md-6:nth-child(n+3) {
+        margin-top: 20px;
+    }
+}
+
+.screen h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.screen img {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.screen h3 {
+    color: #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.screen p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+/** блок reviews**/
+
+.reviews {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.reviews h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin: 35px;
+}
+
+.reviews .col-md-6 {
+    float: left;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.reviews .col-md-6:nth-child(2n+1) {
+    padding-left: 15px;
+}
+
+.reviews .col-md-6:nth-child(2n) {
+    padding-right: 15px;
+}
+
+@media (max-width:991px) {
+    .reviews .col-md-6:nth-child(2n+1) {
+        padding-left: 0;
+    }
+    .reviews .col-md-6:nth-child(2n) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.reviews img {
+    float: left;
+    margin-right: 16px;
+}
+
+.reviews p {
+    color: #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: left;
+    background-color: #ececec;
+    margin-left: 91px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.reviews span {
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    font-style: normal;
+}
+
+
+/*блок buy*/
+
+.buy {
+    height: 100%;
+    overflow: hidden;
+}
+
+.buy h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.buy div {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.buy article {
+    height: 100%;
+    overflow: hidden;
+    background-color: #445161;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.buy article:not(last-of-type) {
+    margin-right: 45px;
+}
+
+.buy h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.buy span {
+    display: block;
+    background-color: #ffffff;
+    margin-left: -18px;
+    margin-right: -18px;
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 71px;
+    text-align: center;
+}
+
+.buy ol {
+    margin-left: 20px;
+}
+
+.buy li {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.buy a {
+    display: block;
+    background-color: #ffffff;
+    height: 200%;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media (max-width:991px) {
+    .buy div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .buy article {
+        margin-bottom: 20px;
+    }
+    .buy article:not(last-of-type) {
+        margin-right: 0;
+    }
+}
+
+
+/*блок footer*/
+
+footer {
+    height: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+    background-color: #445161;
+    padding-top: 50px;
+}
+
+footer h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+footer .feedback {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer form {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer input[type="text"] {
+    height: 36px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+footer textarea {
+    height: 170px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+footer input[type="submit"] {
+    height: 40px;
+    width: 30%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer address {
+    height: 230px;
+    width: 240px;
+    margin-left: 45px;
+}
+
+address div {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 18px;
+    padding-left: 30px;
+}
+
+.skype {
+    background: url("img/skype%20icon.png") no-repeat left center;
+}
+
+.icq {
+    background: url("img/icq%20icon.png") no-repeat left center;
+}
+
+.email {
+    background: url("img/email%20icon.png") no-repeat left center;
+}
+
+.phone {
+    background: url("img/phone%20icon.png") no-repeat left center;
+}
+
+.social {
+    font-family: Socialico, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 30px;
+}
+
+footer h4 {
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-bottom: 0;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media (max-width:991px) {
+    footer .feedback {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center:
+    }
+    footer form {
+        margin-bottom: 20px;
+    }
+    footer address {
+        margin-left: 0;
+    }
+}
